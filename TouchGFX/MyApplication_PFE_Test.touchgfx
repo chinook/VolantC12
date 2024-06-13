@@ -1,0 +1,1578 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "UI_page1",
+        "CanvasBufferSize": 12000,
+        "Components": [
+          {
+            "Type": "Shape",
+            "Name": "background",
+            "Width": 800,
+            "Height": 480,
+            "Filename": "background.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Container",
+            "Name": "header_page1_container",
+            "Width": 800,
+            "Height": 48,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "header_p1_box",
+                "Width": 800,
+                "Height": 48,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "page1_num_text",
+                "X": 718,
+                "Y": 9,
+                "Width": 68,
+                "Height": 30,
+                "LockPosition": true,
+                "TextId": "__SingleUse_3HV5",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "mast_angle_container",
+            "Y": 48,
+            "Width": 400,
+            "Height": 144,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "mast_angle_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "mast_angle_text",
+                "X": 143,
+                "Y": 32,
+                "Width": 114,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_L4QF",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "mast_angle_text",
+                  "UseBuffer": true,
+                  "BufferSize": 4
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "mast_angle_title",
+                "X": 11,
+                "Y": 111,
+                "Width": 115,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_D6MX",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "pitch_container",
+            "X": 400,
+            "Y": 48,
+            "Width": 400,
+            "Height": 144,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "pitch_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "pitch_text",
+                "X": 143,
+                "Y": 32,
+                "Width": 114,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_81RM",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "pitch_text",
+                  "UseBuffer": true,
+                  "BufferSize": 4
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "pitch_title",
+                "X": 10,
+                "Y": 111,
+                "Width": 55,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_9D5D",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "wind_speed_container",
+            "Y": 192,
+            "Width": 400,
+            "Height": 144,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "wind_speed_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "wind_speed_text",
+                "X": 143,
+                "Y": 36,
+                "Width": 114,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_SO00",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "wind_speed_text",
+                  "UseBuffer": true,
+                  "BufferSize": 4
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "wind_speed_title",
+                "X": 11,
+                "Y": 108,
+                "Width": 122,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_9LAL",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "wind_dir_container",
+            "X": 400,
+            "Y": 192,
+            "Width": 400,
+            "Height": 144,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "wind_dir_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "wind_dir_text",
+                "X": 123,
+                "Y": 36,
+                "Width": 154,
+                "Height": 61,
+                "TextId": "__SingleUse_XKIF",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "wind_dir_text",
+                  "UseBuffer": true,
+                  "BufferSize": 5
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "wind_dir_title",
+                "X": 10,
+                "Y": 108,
+                "Width": 88,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_0EMJ",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "wheel_rpm_container",
+            "Y": 336,
+            "Width": 400,
+            "Height": 144,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "wheel_rpm_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "wheel_rpm_text",
+                "X": 124,
+                "Y": 36,
+                "Width": 152,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_TBOP",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "wheel_rpm_text",
+                  "UseBuffer": true,
+                  "BufferSize": 5
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "wheel_rpm_title",
+                "X": 11,
+                "Y": 108,
+                "Width": 119,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_44IK",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "turb_rpm_container",
+            "X": 400,
+            "Y": 336,
+            "Width": 400,
+            "Height": 144,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "turb_rpm_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "turb_rpm_text",
+                "X": 124,
+                "Y": 36,
+                "Width": 152,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_KJ23",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "turb_rpm_text",
+                  "UseBuffer": true,
+                  "BufferSize": 5
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "turb_rpm_title",
+                "X": 10,
+                "Y": 108,
+                "Width": 131,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_666S",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "show_ui_page2",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 1
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "UI_page2"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "UI_page2",
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "background",
+            "Width": 800,
+            "Height": 480,
+            "Filename": "background.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Container",
+            "Name": "header_page2_container",
+            "Width": 800,
+            "Height": 48,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "header_p2_box",
+                "Width": 800,
+                "Height": 48,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "page2_num_text",
+                "X": 718,
+                "Y": 9,
+                "Width": 68,
+                "Height": 30,
+                "LockPosition": true,
+                "TextId": "__SingleUse_5F4S",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "power_container",
+            "Y": 48,
+            "Width": 400,
+            "Height": 144,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "power_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "power_text",
+                "X": 143,
+                "Y": 32,
+                "Width": 114,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_T51H",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "power_text",
+                  "UseBuffer": true,
+                  "BufferSize": 4
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "power_title",
+                "X": 11,
+                "Y": 111,
+                "Width": 66,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_JQY3",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "efficiency_container",
+            "X": 400,
+            "Y": 48,
+            "Width": 400,
+            "Height": 144,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "efficiency_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "efficiency_text",
+                "X": 111,
+                "Y": 32,
+                "Width": 179,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_CBTY",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "efficiency_text",
+                  "UseBuffer": true,
+                  "BufferSize": 4
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "efficiency_title",
+                "X": 10,
+                "Y": 111,
+                "Width": 100,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_RZFK",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "tsr_container",
+            "Y": 192,
+            "Width": 400,
+            "Height": 144,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "tsr_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "tsr_text",
+                "X": 143,
+                "Y": 36,
+                "Width": 114,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_ZRFM",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "tsr_text",
+                  "UseBuffer": true,
+                  "BufferSize": 4
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "tsr_title",
+                "X": 11,
+                "Y": 108,
+                "Width": 47,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_QFKQ",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ],
+            "XScale": 1.0,
+            "YScale": 1.0
+          },
+          {
+            "Type": "Container",
+            "Name": "header_page1_container",
+            "Width": 800,
+            "Height": 48,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "header_p1_box",
+                "Width": 800,
+                "Height": 48,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "page1_num_text",
+                "X": 735,
+                "Y": 12,
+                "Width": 44,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_6UOW",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "mast_angle_container",
+            "Y": 48,
+            "Width": 400,
+            "Height": 144,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "mast_angle_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "mast_angle_text",
+                "X": 110,
+                "Y": 32,
+                "Width": 185,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_6NEM",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "mast_angle_text",
+                  "UseBuffer": true,
+                  "BufferSize": 7
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "mast_angle_title",
+                "X": 11,
+                "Y": 111,
+                "Width": 97,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_ACSH",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "pitch_container",
+            "X": 400,
+            "Y": 48,
+            "Width": 400,
+            "Height": 144,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "pitch_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "pitch_text",
+                "X": 110,
+                "Y": 32,
+                "Width": 185,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_DQ6P",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "pitch_text",
+                  "UseBuffer": true,
+                  "BufferSize": 7
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "pitch_title",
+                "X": 10,
+                "Y": 111,
+                "Width": 46,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_Z9YY",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "wind_speed_container",
+            "Y": 192,
+            "Width": 400,
+            "Height": 144,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "wind_speed_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "wind_speed_text",
+                "X": 110,
+                "Y": 32,
+                "Width": 185,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_VF66",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "wind_speed_text",
+                  "UseBuffer": true,
+                  "BufferSize": 7
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "wind_speed_title",
+                "X": 11,
+                "Y": 108,
+                "Width": 105,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_BDA3",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "wind_dir_container",
+            "X": 400,
+            "Y": 192,
+            "Width": 400,
+            "Height": 144,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "wind_dir_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "wind_dir_text",
+                "X": 110,
+                "Y": 32,
+                "Width": 185,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_A1X8",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "wind_dir_text",
+                  "UseBuffer": true,
+                  "BufferSize": 7
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "wind_dir_title",
+                "X": 10,
+                "Y": 108,
+                "Width": 78,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_DKX9",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "wheel_rpm_container",
+            "Y": 336,
+            "Width": 400,
+            "Height": 144,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "wheel_rpm_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "wheel_rpm_text",
+                "X": 110,
+                "Y": 32,
+                "Width": 185,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_QIHN",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "wheel_rpm_text",
+                  "UseBuffer": true,
+                  "BufferSize": 7
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "wheel_rpm_title",
+                "X": 11,
+                "Y": 108,
+                "Width": 102,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_4D63",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "turb_rpm_container",
+            "X": 400,
+            "Y": 336,
+            "Width": 400,
+            "Height": 144,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "turb_rpm_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "turb_rpm_text",
+                "X": 110,
+                "Y": 32,
+                "Width": 185,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_95PI",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "turb_rpm_text",
+                  "UseBuffer": true,
+                  "BufferSize": 7
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "turb_rpm_title",
+                "X": 10,
+                "Y": 108,
+                "Width": 113,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_HA9B",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "show_ui_page2",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 1
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "UI_page2"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "UI_page2",
+        "CanvasBufferSize": 12000,
+        "Components": [
+          {
+            "Type": "Shape",
+            "Name": "background",
+            "Width": 800,
+            "Height": 480,
+            "Color": {
+              "Red": 255
+            },
+            "Points": [
+              {},
+              {
+                "X": 800.0
+              },
+              {
+                "X": 800.0,
+                "Y": 480.0
+              },
+              {
+                "Y": 480.0
+              }
+            ],
+            "XScale": 1.0,
+            "YScale": 1.0
+          },
+          {
+            "Type": "Container",
+            "Name": "header_page2_container",
+            "Width": 800,
+            "Height": 48,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "header_p2_box",
+                "Width": 800,
+                "Height": 48,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "page2_num_text",
+                "X": 735,
+                "Y": 12,
+                "Width": 44,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_3I29",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "power_container",
+            "Y": 48,
+            "Width": 400,
+            "Height": 144,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "power_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "power_text",
+                "X": 92,
+                "Y": 32,
+                "Width": 225,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_79HL",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "power_text",
+                  "UseBuffer": true,
+                  "BufferSize": 8
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "power_title",
+                "X": 11,
+                "Y": 111,
+                "Width": 57,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_41C3",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "efficiency_container",
+            "X": 400,
+            "Y": 48,
+            "Width": 400,
+            "Height": 144,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "efficiency_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "efficiency_text",
+                "X": 92,
+                "Y": 32,
+                "Width": 225,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_LN6I",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "efficiency_text",
+                  "UseBuffer": true,
+                  "BufferSize": 8
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "efficiency_title",
+                "X": 10,
+                "Y": 111,
+                "Width": 83,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_0H6S",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "tsr_container",
+            "Y": 192,
+            "Width": 400,
+            "Height": 144,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "tsr_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "tsr_text",
+                "X": 92,
+                "Y": 36,
+                "Width": 225,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_YIFS",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "tsr_text",
+                  "UseBuffer": true,
+                  "BufferSize": 8
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "tsr_title",
+                "X": 11,
+                "Y": 108,
+                "Width": 35,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_XN6H",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "empty4_container",
+            "X": 400,
+            "Y": 192,
+            "Width": 400,
+            "Height": 144,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "empty4_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "empty4_text",
+                "X": 123,
+                "Y": 36,
+                "Width": 154,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_NZKK",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "empty4_title",
+                "X": 10,
+                "Y": 108,
+                "Width": 58,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_R0SJ",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "empty5_container",
+            "Y": 336,
+            "Width": 400,
+            "Height": 144,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "empty5_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "empty5_text",
+                "X": 124,
+                "Y": 36,
+                "Width": 152,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_EAJ9",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "empty5_title",
+                "X": 11,
+                "Y": 108,
+                "Width": 58,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_80IS",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "empty6_container",
+            "X": 400,
+            "Y": 336,
+            "Width": 400,
+            "Height": 144,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "empty6_box",
+                "Width": 400,
+                "Height": 144,
+                "LockPosition": true,
+                "BorderColor": {
+                  "Red": 50,
+                  "Green": 82,
+                  "Blue": 123
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "empty6_text",
+                "X": 124,
+                "Y": 36,
+                "Width": 152,
+                "Height": 61,
+                "LockPosition": true,
+                "TextId": "__SingleUse_QVOM",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "empty6_title",
+                "X": 10,
+                "Y": 108,
+                "Width": 58,
+                "Height": 24,
+                "LockPosition": true,
+                "TextId": "__SingleUse_R2YU",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "show_ui_page1",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "UI_page1"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "MyApplication_PFE_Test",
+    "Resolution": {
+      "Width": 800,
+      "Height": 480
+    },
+    "SelectedColorDepth": 24,
+    "StartupScreenName": "UI_page1",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      24
+    ],
+    "AvailableLCDs": {
+      "24": "LCDGPU2D"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 800,
+        "Height": 480
+      }
+    ],
+    "PhysicalButtons": [],
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32U5",
+    "SubFamily": "STM32U599/5A9",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m33",
+    "ProjectFile": "../Riverdi_50STM32U5A9.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [
+      "GPU2D"
+    ],
+    "AdditionalFeatures": []
+  },
+  "Version": "4.23.2",
+  "CreatedBy": "4.23.2"
+}
