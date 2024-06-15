@@ -21,6 +21,7 @@
 #include "fdcan.h"
 
 /* USER CODE BEGIN 0 */
+
 static void configure_fdcan_filters(void);
 static void process_can_message(void);
 
@@ -249,101 +250,101 @@ void process_can_message(void)
 	// uint32_t upper_can_data = rxData[4] | (rxData[5] << 8) | (rxData[6] << 16) | (rxData[7] << 24);
 //	uint32_t can_data = rxData[0] | (rxData[1] << 8) | (rxData[2] << 16) | (rxData[3] << 24);
 
-	switch (rxHeader.Identifier) {
-
-	    case MARIO_MAST_ANGLE:
-	    	// Check if the received message data length is correct
-	    	if (rxHeader.DataLength != 4) {
-	    	    Error_Handler();
-	    	} else {
-	    	    // Interpret the received bytes as a float
-	    	    memcpy(&canRx_mast_angle, rxData, sizeof(float));
-	    	    osMessageQueuePut(screen1_isr_queue, &mast_angle_flag, 0, 0);
-	    	}
-	        break;
-
-	    case MARIO_PITCH_ANGLE:
-	    	// Check if the received message data length is correct
-			if (rxHeader.DataLength != 4) {
-				Error_Handler();
-			} else {
-				// Interpret the received bytes as a float
-				memcpy(&canRx_pitch, rxData, sizeof(float));
-				osMessageQueuePut(screen1_isr_queue, &pitch_flag, 0, 0);
-			}
-	        break;
-
-	    case MARIO_WIND_SPEED:
-	    	// Check if the received message data length is correct
-			if (rxHeader.DataLength != 4) {
-				Error_Handler();
-			} else {
-				// Interpret the received bytes as a float
-				memcpy(&canRx_wind_speed, rxData, sizeof(float));
-				osMessageQueuePut(screen1_isr_queue, &wind_sp_flag, 0, 0);
-			}
-	        break;
-
-	    case MARIO_WIND_DIRECTION:
-	    	// Check if the received message data length is correct
-			if (rxHeader.DataLength != 4) {
-				Error_Handler();
-			} else {
-				// Interpret the received bytes as a float
-				memcpy(&canRx_wind_dir, rxData, sizeof(float));
-				osMessageQueuePut(screen1_isr_queue, &wind_dir_flag, 0, 0);
-			}
-	        break;
-
-	    case MARIO_WHEEL_RPM:
-	    	// Check if the received message data length is correct
-			if (rxHeader.DataLength != 4) {
-				Error_Handler();
-			} else {
-				// Interpret the received bytes as a float
-				memcpy(&canRx_wheel_rpm, rxData, sizeof(float));
-				osMessageQueuePut(screen1_isr_queue, &wheel_rpm_flag, 0, 0);
-			}
-	        break;
-
-	    case MARIO_ROTOR_RPM:
-	    	// Check if the received message data length is correct
-			if (rxHeader.DataLength != 4) {
-				Error_Handler();
-			} else {
-				// Interpret the received bytes as a float
-				memcpy(&canRx_turbine_rpm, rxData, sizeof(float));
-				osMessageQueuePut(screen1_isr_queue, &turb_rpm_flag, 0, 0);
-			}
-	    	break;
-
-	    case MARIO_TIP_SPEED_RATIO:
-	    	// Check if the received message data length is correct
-			if (rxHeader.DataLength != 4) {
-				Error_Handler();
-			} else {
-				// Interpret the received bytes as a float
-				memcpy(&canRx_tsr, rxData, sizeof(float));
-				osMessageQueuePut(screen2_isr_queue, &tsr_flag, 0, 0);
-			}
-	        break;
-
-	    case MARIO_TORQUE:
-	    	// Check if the received message data length is correct
-			if (rxHeader.DataLength != 4) {
-				Error_Handler();
-			} else {
-				// Interpret the received bytes as a float
-				memcpy(&canRx_torque, rxData, sizeof(float));
-				osMessageQueuePut(screen2_isr_queue, &eff_flag, 0, 0);
-				osMessageQueuePut(screen2_isr_queue, &tsr_flag, 0, 0);
-			}
-			break;
-
-	    default:
-	        // Unknown CAN ID
-	        break;
-	}
+//	switch (rxHeader.Identifier) {
+//
+//	    case MARIO_MAST_ANGLE:
+//	    	// Check if the received message data length is correct
+//	    	if (rxHeader.DataLength != 4) {
+//	    	    Error_Handler();
+//	    	} else {
+//	    	    // Interpret the received bytes as a float
+//	    	    memcpy(&canRx_mast_angle, rxData, sizeof(float));
+//	    	    osMessageQueuePut(screen1_isr_queue, &mast_angle_flag, 0, 0);
+//	    	}
+//	        break;
+//
+//	    case MARIO_PITCH_ANGLE:
+//	    	// Check if the received message data length is correct
+//			if (rxHeader.DataLength != 4) {
+//				Error_Handler();
+//			} else {
+//				// Interpret the received bytes as a float
+//				memcpy(&canRx_pitch, rxData, sizeof(float));
+//				osMessageQueuePut(screen1_isr_queue, &pitch_flag, 0, 0);
+//			}
+//	        break;
+//
+//	    case MARIO_WIND_SPEED:
+//	    	// Check if the received message data length is correct
+//			if (rxHeader.DataLength != 4) {
+//				Error_Handler();
+//			} else {
+//				// Interpret the received bytes as a float
+//				memcpy(&canRx_wind_speed, rxData, sizeof(float));
+//				osMessageQueuePut(screen1_isr_queue, &wind_sp_flag, 0, 0);
+//			}
+//	        break;
+//
+//	    case MARIO_WIND_DIRECTION:
+//	    	// Check if the received message data length is correct
+//			if (rxHeader.DataLength != 4) {
+//				Error_Handler();
+//			} else {
+//				// Interpret the received bytes as a float
+//				memcpy(&canRx_wind_dir, rxData, sizeof(float));
+//				osMessageQueuePut(screen1_isr_queue, &wind_dir_flag, 0, 0);
+//			}
+//	        break;
+//
+//	    case MARIO_WHEEL_RPM:
+//	    	// Check if the received message data length is correct
+//			if (rxHeader.DataLength != 4) {
+//				Error_Handler();
+//			} else {
+//				// Interpret the received bytes as a float
+//				memcpy(&canRx_wheel_rpm, rxData, sizeof(float));
+//				osMessageQueuePut(screen1_isr_queue, &wheel_rpm_flag, 0, 0);
+//			}
+//	        break;
+//
+//	    case MARIO_ROTOR_RPM:
+//	    	// Check if the received message data length is correct
+//			if (rxHeader.DataLength != 4) {
+//				Error_Handler();
+//			} else {
+//				// Interpret the received bytes as a float
+//				memcpy(&canRx_turbine_rpm, rxData, sizeof(float));
+//				osMessageQueuePut(screen1_isr_queue, &turb_rpm_flag, 0, 0);
+//			}
+//	    	break;
+//
+//	    case MARIO_TIP_SPEED_RATIO:
+//	    	// Check if the received message data length is correct
+//			if (rxHeader.DataLength != 4) {
+//				Error_Handler();
+//			} else {
+//				// Interpret the received bytes as a float
+//				memcpy(&canRx_tsr, rxData, sizeof(float));
+//				osMessageQueuePut(screen2_isr_queue, &tsr_flag, 0, 0);
+//			}
+//	        break;
+//
+//	    case MARIO_TORQUE:
+//	    	// Check if the received message data length is correct
+//			if (rxHeader.DataLength != 4) {
+//				Error_Handler();
+//			} else {
+//				// Interpret the received bytes as a float
+//				memcpy(&canRx_torque, rxData, sizeof(float));
+//				osMessageQueuePut(screen2_isr_queue, &eff_flag, 0, 0);
+//				osMessageQueuePut(screen2_isr_queue, &tsr_flag, 0, 0);
+//			}
+//			break;
+//
+//	    default:
+//	        // Unknown CAN ID
+//	        break;
+//	}
 
 }
 
@@ -354,20 +355,22 @@ void process_can_message(void)
  * @return None
  */
 
-//void HAL_GPIO_EXTI_Rising_Callback(uint16_t GPIO_Pin)	//TODO: Define the GPIO buttons
-//{
-//	/* Prepare Tx message Header */
-//	txHeader.IdType              = FDCAN_STANDARD_ID;
-//	txHeader.TxFrameType         = FDCAN_DATA_FRAME;
-//	txHeader.ErrorStateIndicator = FDCAN_ESI_ACTIVE;
-//	txHeader.BitRateSwitch       = FDCAN_BRS_OFF;
-//	txHeader.FDFormat            = FDCAN_CLASSIC_CAN;
-//	txHeader.TxEventFifoControl  = FDCAN_NO_TX_EVENTS;
-//	txHeader.MessageMarker       = 0U;
-//
-//	// Button rising edge interrupt occurred, handle it here
-//	switch (GPIO_Pin) {
-//		case BUTTON_PITCH_MODE:
+void HAL_GPIO_EXTI_Rising_Callback(uint16_t GPIO_Pin)	//TODO: Define the GPIO buttons
+{
+	/* Prepare Tx message Header */
+	txHeader.IdType              = FDCAN_STANDARD_ID;
+	txHeader.TxFrameType         = FDCAN_DATA_FRAME;
+	txHeader.ErrorStateIndicator = FDCAN_ESI_ACTIVE;
+	txHeader.BitRateSwitch       = FDCAN_BRS_OFF;
+	txHeader.FDFormat            = FDCAN_CLASSIC_CAN;
+	txHeader.TxEventFifoControl  = FDCAN_NO_TX_EVENTS;
+	txHeader.MessageMarker       = 0U;
+
+	float data = 0;
+
+	// Button rising edge interrupt occurred, handle it here
+	switch (GPIO_Pin) {
+		case GPIO_PIN_6:
 //			txHeader.Identifier          = VOLANT_PITCH_MODE_CMD;
 //			txHeader.DataLength          = 4U;
 //
@@ -378,9 +381,14 @@ void process_can_message(void)
 //			{
 //			  Error_Handler();
 //			}
-//
-//			break;
-//
+
+			data += 0.1f;
+
+			memcpy(&canRx_mast_angle, data, sizeof(float));
+			osMessageQueuePut(screen1_isr_queue, &mast_angle_flag, 0, 0);
+
+			break;
+
 //		case BUTTON_PITCH_LEFT:
 //			txHeader.Identifier          = VOLANT_MANUAL_PITCH_CMD;
 //			txHeader.DataLength          = 4U;
@@ -408,11 +416,11 @@ void process_can_message(void)
 //			}
 //
 //			break;
-//
-//		//TODO: Continue the rest of the commands
-//		default:
-//			break;
-//	}
-//}
+
+		//TODO: Continue the rest of the commands
+		default:
+			break;
+	}
+}
 
 /* USER CODE END 1 */

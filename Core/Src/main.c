@@ -159,7 +159,6 @@ int main(void)
   MX_OCTOSPI1_Init();
   MX_RNG_Init();
   MX_RTC_Init();
-  MX_SPI1_Init();
   MX_SPI2_Init();
   MX_TIM3_Init();
   MX_TIM5_Init();
@@ -167,7 +166,6 @@ int main(void)
   MX_TIM8_Init();
   MX_TIM15_Init();
   MX_USART1_UART_Init();
-  MX_USART3_UART_Init();
   MX_USART6_UART_Init();
   MX_USB_OTG_HS_USB_Init();
   MX_TouchGFX_Init();
@@ -281,10 +279,6 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-
-  /** MCO configuration
-  */
-  HAL_RCC_MCOConfig(RCC_MCO1, RCC_MCO1SOURCE_SYSCLK, RCC_MCODIV_1);
 }
 
 /**
